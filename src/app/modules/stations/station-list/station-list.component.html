@@ -1,0 +1,163 @@
+<div class="site-content">
+    <div class="hero">
+
+
+
+        <form action="#" class="find-location">
+            <input type="text" name="searchInput" placeholder="">
+        </form>
+
+
+
+
+    </div>
+    <div class="forecast-table">
+        <div class="container">
+            <div class="forecast-container">
+                <div class="today forecast">
+                    <div class="forecast-header">
+                        <div class="day" style="color: white;">Monday</div>
+                        <div class="date"></div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+                        <div class="location">Bloemfontein</div>
+                        <div class="degree">
+                            <div class="num">21<sup>o</sup>C</div>
+                            <div class="forecast-icon">
+                                <img src="images/icons/icon-1.svg" alt="" width=90>
+                            </div>
+                        </div>
+                        <span><img src="images/icon-umberella.png" alt="">67%</span>
+                        <span><img src="images/icon-wind.png" alt="">14.5m/s</span>
+                        <span><img src="images/icon-compass.png" alt="">W</span>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day">Tuesday</div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+
+                        <div class="degree">32<sup>o</sup>C</div>
+                        <small>15<sup>%</sup></small>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day">Wednesday</div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+
+                        <div class="degree">42<sup>o</sup>C</div>
+                        <small>13<sup>%</sup></small>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day">Thursday</div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+
+                        <div class="degree">40<sup>o</sup>C</div>
+                        <small>14<sup>%</sup></small>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day">Friday</div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+
+                        <div class="degree">28<sup>o</sup>C</div>
+                        <small>13<sup>%</sup></small>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day">Saturday</div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+
+                        <div class="degree">27<sup>o</sup>C</div>
+                        <small>7<sup>o</sup></small>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="forecast-header">
+                        <div class="day">Sunday</div>
+                    </div>
+                    <!-- .forecast-header -->
+                    <div class="forecast-content">
+
+                        <div class="degree"> 21<sup>o</sup>C</div>
+                        <small>11<sup>o</sup></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Weather Stations
+<div class="table table-hover" *ngFor="let sta of allStation">
+    <tr>
+
+        <td>The Site</td>
+        <td>Location</td>
+        <td>Date Time</td>
+        <td>Humidity</td>
+        <td>Precipitation</td>
+        <td>Pressure</td>
+        <td>Radiation</td>
+        <td>Temperature</td>
+        <td>Winddirection</td>
+        <td>Windspeed</td>
+
+        <td>
+
+            <a class="btn">
+                <i class="fa fa-edit"></i>
+            </a>
+        </td>
+        <td>
+            <a class="btn text-danger">
+                <i class="fa fa-trash"></i>
+            </a>
+        </td>
+
+    </tr>
+
+    <tr>
+
+        <td>{{sta.site}}</td>
+        <td>{{sta.name}}</td>
+        <td>{{sta.dateTime}}</td>
+        <td>{{sta.humidity}}</td>
+        <td>{{sta.precipitation}}</td>
+        <td>{{sta.pressure}}</td>
+        <td>{{sta.radiation}}</td>
+        <td>{{sta.temperature}}</td>
+        <td>{{sta.winddirection}}</td>
+        <td>{{sta.windspeed}}</td>
+
+        <td>
+
+            <a class="btn">
+                <i class="fa fa-edit"></i>
+            </a>
+        </td>
+        <td>
+            <a class="btn text-danger">
+                <i class="fa fa-trash"></i>
+            </a>
+        </td>
+
+    </tr>
+
+</div>

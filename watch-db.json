@@ -1,0 +1,16 @@
+{
+    "stations": [{
+            "site": "TA00486",
+            "name": "Johannesburg",
+            "dateTime": "9/14/2019 0:00",
+            "humidity": 50,
+            "precipitation": 0.17,
+            "pressure": 87.59,
+            "radiation": 0,
+            "temperature": 13.53,
+            "winddirection": "SE",
+            "windspeed": 0.89
+        }
+
+    ]
+}
